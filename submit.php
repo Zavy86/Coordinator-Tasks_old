@@ -21,7 +21,7 @@ switch($act){
  * Task Save
  */
 function task_save(){
- if(!api_checkPermission("tasks","task_usage")){api_die("accessDenied");}
+ if(!api_checkPermission("tasks","tasks_usage")){api_die("accessDenied");}
  // get objects
  $task=api_tasks_task($_GET['idTask']);
  // acquire variables
@@ -73,7 +73,7 @@ function task_save(){
  * Task Status
  */
 function task_status(){
- if(!api_checkPermission("tasks","task_usage")){api_die("accessDenied");}
+ if(!api_checkPermission("tasks","tasks_usage")){api_die("accessDenied");}
  // get objects
  $task=api_tasks_task($_GET['idTask']);
  // acquire variables
@@ -101,7 +101,7 @@ function task_status(){
  * Task Delete
  */
 function task_delete(){
- if(!api_checkPermission("tasks","task_usage")){api_die("accessDenied");}
+ if(!api_checkPermission("tasks","tasks_usage")){api_die("accessDenied");}
  // get objects
  $task=api_tasks_task($_GET['idTask']);
  // check objects
