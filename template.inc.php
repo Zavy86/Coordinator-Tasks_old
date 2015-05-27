@@ -3,7 +3,6 @@
 |* -[ Tasks - Template ]----------------------------------------------------- *|
 \* -------------------------------------------------------------------------- */
 include("module.inc.php");
-$module_name="tasks";  ////
 include("../core/api.inc.php");
 api_loadModule();
 // print header
