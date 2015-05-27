@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<locale language="EN">
+
+ <!-- module -->
+ <text key="module-title">Tasks</text>
+
+ <!-- alerts -->
+ <text key="taskNotFound">The task was not found</text>
+ <text key="taskCreated">The task has been created</text>
+ <text key="taskUpdated">The task has been updated</text>
+ <text key="taskStatus1">The status of task "{0}" has been set to inserted</text>
+ <text key="taskStatus2">The status of task "{0}" has been set to processing</text>
+ <text key="taskStatus3">The status of task "{0}" has been set to completed</text>
+ <text key="taskDeleted">The task has been deleted</text>
+
+ <!-- logs -->
+ <text key="logs_tasks_taskCreated">Task [Created] {1}&#xA;&#xA;Assigned to: {2}</text>
+ <text key="logs_tasks_taskUpdated">Task [Updated] {1}&#xA;&#xA;Assigned to: {2}</text>
+ <text key="logs_tasks_taskStatus1">Task [Inserted] {1}&#xA;&#xA;Assigned to: {2}</text>
+ <text key="logs_tasks_taskStatus2">Task [Processing] {1}&#xA;&#xA;Assigned to: {2}</text>
+ <text key="logs_tasks_taskStatus3">Task [Completed] {1}&#xA;&#xA;Assigned to: {2}</text>
+ <text key="logs_tasks_taskDeleted">Task [Deleted] {1}&#xA;&#xA;Assigned to: {2}</text>
+
+ <!-- tasks status -->
+ <text key="task-status-inserted">Inserted</text>
+ <text key="task-status-processing">Processing</text>
+ <text key="task-status-completed">Completed</text>
+
+ <!-- filters -->
+ <text key="filter-status">Status</text>
+ <text key="filter-account">Assigned to</text>
+
+ <!-- api.inc.php -->
+ <text key="api-task-dt-status">Status</text>
+ <text key="api-task-dt-add">Created by</text>
+ <text key="api-task-dd-add">{0}, {1}</text>
+ <text key="api-task-dt-upd">Updated by</text>
+ <text key="api-task-dd-upd">{0}, {1}</text>
+ <text key="api-task-undescribed">The task has not been described..</text>
+ <text key="api-task-edit">Edit task</text>
+ <text key="api-task-inserted">Inserted</text>
+ <text key="api-task-processing">Processing</text>
+ <text key="api-task-completed">Completed</text>
+ <text key="api-task-delete">Delete</text>
+ <text key="api-task-delete-confirm">Are you sure you want to delete this task?</text>
+
+ <!-- template.inc.php -->
+ <text key="nav-list">Tasks</text>
+ <text key="nav-add">Add new</text>
+ <text key="nav-edit">Edit task</text>
+
+ <!-- tasks_list.php -->
+ <text key="tasks_list-tr-unvalued">There are no tasks to display..</text>
+ <text key="tasks_list-th-account">Assigned</text>
+ <text key="tasks_list-th-subject">Task</text>
+ <text key="tasks_list-th-updDate">Updated</text>
+ <text key="tasks_list-th-status">Status</text>
+
+ <!-- signatures_edit.php -->
+ <text key="tasks_edit-ff-account">Account</text>
+ <text key="tasks_edit-ff-subject">Subject</text>
+ <text key="tasks_edit-ff-description">Description</text>
+ <text key="tasks_edit-fc-submit">Save</text>
+ <text key="tasks_edit-fc-cancel">Cancel</text>
+ <text key="tasks_edit-fc-delete">Delete</text>
+ <text key="tasks_edit-fc-delete-confirm">Are you sure you want to delete this task?</text>
+
+</locale>
