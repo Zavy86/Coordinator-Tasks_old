@@ -35,6 +35,7 @@ function content(){
    },
    submitHandler:function(form){form.submit();}
   });
+<?php if(api_checkPermission("tasks","tasks_edit_all")){ ?>
   // select2 idAccount
   $("input[name=idAccount]").select2({
    placeholder:"<?php echo api_account()->name; ?>",
@@ -55,6 +56,7 @@ function content(){
     }
    }
   });
+<?php } ?>
  });
 </script>
 <?php } ?>
