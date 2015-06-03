@@ -3,7 +3,7 @@
 |* -[ Tasks - Module Information ]------------------------------------------- *|
 \* -------------------------------------------------------------------------- */
 $module_name="tasks";
-$module_version="1.0.2";
+$module_version="1.0.3";
 $module_title="Tasks";
 $module_description="Tasks and to-do lists";
 $module_create_menu=TRUE;
