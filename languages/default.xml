@@ -57,9 +57,9 @@
  <text key="tasks_list-th-updDate">Updated</text>
  <text key="tasks_list-th-status">Status</text>
 
- <!-- signatures_edit.php -->
+ <!-- tasks_edit.php -->
  <text key="tasks_edit-ff-account">Account</text>
- <text key="tasks_edit-ff-subject">Subject</text>
+ <text key="tasks_edit-ff-subject">Task</text>
  <text key="tasks_edit-ff-description">Description</text>
  <text key="tasks_edit-fc-submit">Save</text>
  <text key="tasks_edit-fc-cancel">Cancel</text>

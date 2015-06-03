@@ -10,7 +10,14 @@ function content(){
  // build form
  $form=new str_form("submit.php?act=task_save&idTask=".$task->id,"post","tasks_edit");
  if(api_checkPermission("tasks","tasks_edit_all")){
-  $form->addField("hidden","idAccount",api_text("tasks_edit-ff-account"),$task->idAccount,"input-xlarge",api_account()->name);
+  if(!$GLOBALS['db']->countOf("accounts_accounts","enabled='1'")>10){
+   $form->addField("hidden","idAccount",api_text("tasks_edit-ff-account"),$task->idAccount,"input-xlarge",api_account()->name);
+  }else{
+   $form->addField("select","idAccount",api_text("tasks_edit-ff-account"),NULL,"input-xlarge");
+   $accounts=$GLOBALS['db']->query("SELECT * FROM accounts_accounts WHERE enabled='1' ORDER BY name ASC");
+   $form->addFieldOption(api_account()->id,api_account()->name);
+   while($account=$GLOBALS['db']->fetchNextObject($accounts)){$form->addFieldOption($account->id,stripslashes($account->name),($account->id==$task->idAccount?TRUE:FALSE));}
+  }
  }else{
   $form->addField("hidden","idAccount",NULL,api_account()->id);
  }
