@@ -44,6 +44,8 @@ function content(){
  // renderize status modal windows
  foreach($modals_array as $modal){$modal->render();}
  foreach($status_modals_array as $status_modal){$status_modal->render();}
+ // store to session for export
+ $_SESSION['tasks']['export']=$tasks->results;
  // debug
  if($_SESSION["account"]->debug){
   pre_var_dump($tasks->query,"print","query");

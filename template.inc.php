@@ -14,6 +14,8 @@ $navigation=new str_navigation((api_baseName()=="tasks_list.php"?TRUE:FALSE));
 $navigation->addTab(api_text("nav-list"),"tasks_list.php");
 // filters
 if(api_baseName()=="tasks_list.php"){
+ // export
+ $navigation->addSubTab(api_text("nav-export"),"tasks_export.php",NULL,NULL,TRUE,"_blank");
  // status
  $navigation->addFilter("multiselect","status",api_text("filter-status"),array(1=>api_text("task-status-inserted"),2=>api_text("task-status-processing"),3=>api_text("task-status-completed"))); //,4=>api_text("task-status-archived"
  if(api_checkPermission($module_name,"tasks_view_all")){
