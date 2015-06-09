@@ -49,6 +49,7 @@
  <text key="nav-list">Tasks</text>
  <text key="nav-add">Add new</text>
  <text key="nav-edit">Edit task</text>
+ <text key="nav-export">Export tasks</text>
 
  <!-- tasks_list.php -->
  <text key="tasks_list-tr-unvalued">There are no tasks to display..</text>
@@ -65,5 +66,10 @@
  <text key="tasks_edit-fc-cancel">Cancel</text>
  <text key="tasks_edit-fc-delete">Delete</text>
  <text key="tasks_edit-fc-delete-confirm">Are you sure you want to delete this task?</text>
+
+ <!-- tasks_export.php -->
+ <text key="tasks_export-page">Page</text>
+ <text key="tasks_export-pageOf">of</text>
+ <text key="tasks_export-timestamp">Timestamp</text>
 
 </locale>
