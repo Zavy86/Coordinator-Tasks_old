@@ -26,7 +26,7 @@ if(api_baseName()=="tasks_list.php"){
   $navigation->addFilter("multiselect","idAccount",api_text("filter-account"),$filter_account_array);
  }
  // if not filtered load default filters
- if($_GET['resetFilters']||($_GET['filtered']<>1&&$_SESSION['filters'][api_baseName()]['filtered']<>1)){$_GET['status']=array(1,2);}
+ if($_GET['resetFilters']||($_GET['filtered']<>1&&$_SESSION['filters'][api_baseModule()][api_baseName()]['filtered']<>1)){$_GET['status']=array(1,2);}
 }
 // add or edit
 if(api_baseName()=="tasks_edit.php" && $_GET['idTask']){
